@@ -40,7 +40,7 @@
 
     <main id="main">
 
-        <section id="heading">
+        <section id="heading" class="one">
             <div id="text"></div>
             <h1 id="im">I'm</h1>
             <h1 id="name">Stephanie Burlinchon</h1>
@@ -83,21 +83,17 @@
 
 
         <section id="contact" class="four">
-            <div>
+            <div class="contactcontainer">
                 <header>
                     <h2>Contact</h2>
                 </header>
                 <p>Want to get in touch? I would love to hear from you! Please drop me a message in the form below.</p>
-                <form method="post" action="#">
+                <form method="post" action="#" id="contactform">
                     <div class="row">
-                        <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-                        <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-                        <div class="col-12">
-                            <textarea name="message" placeholder="Message"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <input type="submit" value="Send Message" />
-                        </div>
+                        <div class="boxes"><input type="text" name="name" placeholder="Name" /></div>
+                        <div class="boxes"><input type="text" name="email" placeholder="Email" /></div>
+                        <div class="boxes"><textarea name="message" placeholder="Message"></textarea></div>
+                        <div><input type="submit" value="Send Message" /></div>
                     </div>
                 </form>
             </div>

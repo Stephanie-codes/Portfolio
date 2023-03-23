@@ -8,7 +8,7 @@ function type() {
   if (index > text.length) index = 0;
 }
 
-setInterval(type, 150); // adjust the interval time to change typing speed
+setInterval(type, 250); // adjust the interval time to change typing speed
 
 
 

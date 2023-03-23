@@ -53,7 +53,7 @@
 }
 
 #heading {
-  height: 100px; /* set a fixed height for the container */
+  height: 100px; 
   position: relative;
   top: 100px;
   width: 100%;
@@ -70,16 +70,16 @@
   font-family: Arial, sans-serif;
   color: rgb(41, 136, 160);
   white-space: pre;
-  position: absolute; /* set position to absolute */
-  top: 0; /* position at the top of the container */
-  left: 0; /* position at the left of the container */
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
   
 h1 {
   font-size: 36px;
   font-family: Arial, sans-serif;
   color: #333;
-  margin-top: 50px; /* add margin-top to create space between the container and the h1 element */
+  margin-top: 50px;
   display: inline-block;
 }
 
@@ -126,9 +126,9 @@ h4 {
 }
 
 .portfolio-container {
-  max-width: 1000px; /* adjust as needed */
-  margin: 0 auto; /* centers the container horizontally */
-  padding: 0 20px; /* adds padding to the left and right of the container */
+  max-width: 1000px; 
+  margin: 0 auto;
+  padding: 0 20px; 
 }  
 
 #aboutme {
@@ -144,23 +144,93 @@ h4 {
 #aboutme.three {
   align-items: center;
   position: relative;
-  max-width: 800px; /* adjust as needed */
+  max-width: 800px;
   display: block;
   margin: 0 auto;
-  padding: 20px; /* adds padding to the container */
-  font-size: 18px; /* sets the font size */
-  line-height: 1.5; /* sets the line height */
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.5;
   text-align: center;
 }
-  
+
 #contact {
-  position: relative;
   top: 700px;
+  position: relative;
   width: 100%;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   z-index: 5;
+  background-color: #f7f7f7;
+  padding: 100px 50px; 
+}
+
+.four {
+margin-block-end: 3rem;
+max-width: 1355px;
+padding-block-start: 5rem;
+padding-inline: 4rem;
+}
+
+.contactcontainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 62.5ch;
+  text-align: center;
+}
+
+.contactcontainer, .four {
+  margin-inline: auto;
+}
+
+#contactform {
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.boxes {
+  min-width: 520px;
+}
+
+#contact form input[type="text"],
+#contact form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+#contact form textarea {
+  height: 150px;
+}
+
+#contact form input[type="submit"] {
+  background-color: rgb(41, 136, 160);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.row {
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  #contact form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #contact form input[type="text"],
+  #contact form textarea {
+    margin-bottom: 20px;
+  }
 }
 
 footer {
@@ -171,5 +241,5 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   z-index: 5;
   color: black;
+  padding-bottom: 20px;
 }
-
