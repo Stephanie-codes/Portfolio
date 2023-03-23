@@ -65,6 +65,22 @@
   margin-bottom: 300px;
 }
 
+.stephpic {
+  position: relative;
+  width: 300px;
+  height: auto;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-right: 150px;
+}
+
+.one::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #text {
   font-size: 24px;
   font-family: Arial, sans-serif;
@@ -117,12 +133,25 @@ h4 {
 
 #portfolio {
   position: relative;
-  top: 250px;
+  top: 300px;
   width: 100%;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   z-index: 3;
+
+}
+
+#portfolio.two {
+  align-items: center;
+  position: relative;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .portfolio-container {
@@ -161,7 +190,7 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   z-index: 5;
-  background-color: #f7f7f7;
+  background-color: #ecfaf8;
   padding: 100px 50px; 
 }
 
@@ -179,6 +208,10 @@ padding-inline: 4rem;
   justify-content: center;
   max-width: 62.5ch;
   text-align: center;
+}
+
+.contactcontainer p {
+  padding-bottom: 30px;
 }
 
 .contactcontainer, .four {
@@ -206,6 +239,7 @@ padding-inline: 4rem;
 
 #contact form textarea {
   height: 150px;
+  margin-bottom: 30px;
 }
 
 #contact form input[type="submit"] {
