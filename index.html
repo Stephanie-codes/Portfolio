@@ -7,102 +7,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephanie Burlinchon Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
     <header>
-        <div class="logo">
+    <!--  <div class="logo">
             <a href="index.html">
               <img src="" alt="Steph's Logo" class="logo-image">
             </a>
-        </div>           
+        </div>      
+    -->     
         <nav class="nav-menu" id="navigation">
-            <ul>
-                <li><a href="index.html" target="content">HOME</a></li>
-                <li><a href="#portfolio" target="content">PORTFOLIO</a></li>
-                <li><a href="#aboutme" target="content">ABOUT ME</a></li>    
-                <li><a href="#contact" target="content">CONTACT</a></li>           
-            </ul>
+            <content>
+                    <div id="connect">
+                        <a href="https://www.linkedin.com/in/stephanieburlinchon/"><i data-feather="linkedin"></i></a>
+                        <a href="https://github.com/Stephanie-codes"> <i data-feather="github"></i></a>
+                        <a href="mailto:stephanieb170@gmail.com"> <i data-feather="mail"></i></a>
+                    </div>
+                    <div id="nav">
+                        <a href="index.html" target="content">home</a>
+                        <a href="#portfolio" target="content">portfolio</a>
+                        <a href="#aboutme" target="content">about me</a>   
+                        <a href="#contact" target="content">contact</a>       
+                    </div>   
+                <script>
+                    feather.replace()
+                </script>
+            </content>  
         </nav>
     </header>
 
-    <main>
-    <h1>Stephanie Burlinchon</h1>
-    <h3>Software Engineer</h3>
+    <main id="main">
+
+        <section id="heading">
+            <div id="text"></div>
+            <h1 id="im">I'm</h1>
+            <h1 id="name">Stephanie Burlinchon</h1>
+            <br>
+            <h3>An Aspiring</h3><h2>Software Engineer</h2>
+        </section>
 
 
-
-
-    <section id="portfolio" class="two">
-        <div class="container">
-            <header>
+        <section id="portfolio" class="two">
+            <div>
+                <header>
                 <h2>Portfolio</h2>
-            </header>
-            <p>Here are some projects I have worked on:</p>
-        </div>
-    </section>
+                </header>
+                <p>Here are some projects I have worked on:</p>
+            </div>
+        </section>
 
 
-    <section id="aboutme" class="three">
-        <div class="container">
-            <header>
-                <h2>About Me</h2>
-            </header>
-             <a href="#" class="image featured"><img src="" alt="" /></a>
-             <p>Hello and welcome to my portfolio website! My name is Stephanie Burlinchon, and I am a self-taught JavaScript developer. I come from a background in Mathematics, where I honed my analytical and problem-solving skills. Graduating from Queen Mary University of London in 2011.
-            <br /> 
-            <br />
-            After spending 10 years in administration, from Personal Assistant to Office Manager, I decided to pursue a career change and dive into the world of technology. I taught myself HTML, CSS, and JavaScript, and have since been developing my skills as a front-end developer.
-            <br />
-            <br />
-            What I love about coding is the endless potential for problem-solving and the satisfaction that comes with creating something from scratch. I enjoy working on challenging projects and finding creative solutions to complex problems.
-            <br />
-            <br />
-            My passion for technology has driven me to constantly learn and improve my skills. I am dedicated to staying up-to-date with the latest trends and best practices in the field, and I am always eager to take on new challenges.
-            <br />
-            <br />
-            Please feel free to browse my portfolio and see some of my recent work. If you have any questions or would like to discuss potential projects, please don't hesitate to get in touch. Thank you for visiting my website!</p>
-         </div>
-    </section>
+        <section id="aboutme" class="three">
+            <div>
+                <header>
+                    <h2>About Me</h2>
+                </header>
+                <a href="#" class="image featured"><img src="" alt="" /></a>
+                <p>Hello and welcome to my portfolio website! My name is Stephanie Burlinchon, and I am a self-taught JavaScript developer. I come from a background in Mathematics, where I honed my analytical and problem-solving skills. Graduating from Queen Mary University of London in 2011.
+                <br /> 
+                <br />
+                After spending 10 years in administration, from Personal Assistant to Office Manager, I decided to pursue a career change and dive into the world of technology. I taught myself HTML, CSS, and JavaScript, and have since been developing my skills as a front-end developer.
+                <br />
+                <br />
+                What I love about coding is the endless potential for problem-solving and the satisfaction that comes with creating something from scratch. I enjoy working on challenging projects and finding creative solutions to complex problems.
+                <br />
+                <br />
+                My passion for technology has driven me to constantly learn and improve my skills. I am dedicated to staying up-to-date with the latest trends and best practices in the field, and I am always eager to take on new challenges.
+                <br />
+                <br />
+                Please feel free to browse my portfolio and see some of my recent work. If you have any questions or would like to discuss potential projects, please don't hesitate to get in touch. Thank you for visiting my website!</p>
+            </div>
+        </section>
 
 
-    <section id="contact" class="four">
-        <div class="container">
-            <header>
-                <h2>Contact</h2>
-            </header>
-            <p>Want to get in touch? I would love to hear from you! Please drop me a message in the form below.</p>
-            <form method="post" action="#">
-                <div class="row">
-                    <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-                    <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-                    <div class="col-12">
-                        <textarea name="message" placeholder="Message"></textarea>
+        <section id="contact" class="four">
+            <div>
+                <header>
+                    <h2>Contact</h2>
+                </header>
+                <p>Want to get in touch? I would love to hear from you! Please drop me a message in the form below.</p>
+                <form method="post" action="#">
+                    <div class="row">
+                        <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+                        <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+                        <div class="col-12">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" value="Send Message" />
+                        </div>
                     </div>
-                    <div class="col-12">
-                        <input type="submit" value="Send Message" />
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-
+                </form>
+            </div>
+        </section>
 
 
     </main>
     
     <footer>
         <div class="footer0"><h1>See you soon!</h1></div>
-        <div class="footer1">Connect with me
-            <div class="social-media">
-                <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
-                <a href="#"> <ion-icon name="logo-linkedin"></ion-icon> </a>
-                <a href="#"> <ion-icon name="logo-youtube"></ion-icon> </a>
-                <a href="#"> <ion-icon name="logo-instagram"></ion-icon> </a>
-                <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
-            </div>
-        </div>
-        <div class="footer2">
+        <div class="footer1">
             Copyright ©
             2023
         </div>
