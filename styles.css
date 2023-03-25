@@ -195,6 +195,13 @@ h4 {
   z-index: 4;
 }
 
+.cartoonpic {
+  position: relative;
+  width: 200px;
+  height: auto;
+  float: left;
+}
+
 #aboutme.three {
   align-items: center;
   position: relative;
