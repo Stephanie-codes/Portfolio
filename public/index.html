@@ -122,14 +122,18 @@
                     <h2>Contact</h2>
                 </header>
                 <p>Want to get in touch? I would love to hear from you! Please drop me a message in the form below.</p>
-                <form method="post" action="#" id="contactform">
+                
+                <div class="form-container">
+                <form class="contact-form" id="contactform">
                     <div class="row">
-                        <div class="boxes"><input type="text" name="name" placeholder="Name" /></div>
-                        <div class="boxes"><input type="text" name="email" placeholder="Email" /></div>
-                        <div class="boxes"><textarea name="message" placeholder="Message"></textarea></div>
+                        <div class="boxes"><input type="text" id="name" name="name" placeholder="Name" /></div>
+                        <div class="boxes"><input type="text" id="email" name="email" placeholder="Email" /></div>
+                        <div class="boxes"><textarea id="message" cols="30" rows="10" name="message" placeholder="Message"></textarea></div>
                         <div><input type="submit" value="Send Message" /></div>
                     </div>
                 </form>
+                </div>
+
             </div>
         </section>
 
