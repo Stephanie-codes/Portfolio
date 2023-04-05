@@ -24,6 +24,7 @@ window.onscroll = function() {
     }
 };
 
+/*
 //Contact form
 const contactForm = document.querySelector('.contact-form');
 
@@ -47,7 +48,7 @@ contactForm.addEventListener('submit', (e) => {
     xhr.setRequestHeader('content-type', 'application/json');
     xhr.onload = function(){
         console.log(xhr.responseText);
-        if(xhr.responseText === 'success'){
+        if(xhr.responseText == 'success'){
             alert('Email sent');
             fullName.value = '';
             email.value = '';
@@ -60,3 +61,54 @@ contactForm.addEventListener('submit', (e) => {
 
     xhr.send(JSON.stringify(formInput));
 });
+*/
+
+
+//USING fetch() instead of xhr 
+const contactForm = document.querySelector('.contact-form');
+
+let fullName = document.getElementById('fullname');
+let email = document.getElementById('email');
+let subject = document.getElementById('subject');
+let message = document.getElementById('message');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  let formInput = {
+    fullName: fullName.value,
+    email: email.value,
+    subject: subject.value,
+    message: message.value
+  }
+
+  fetch('/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formInput)
+  })
+    .then(response => {
+      if (response.ok) {
+        return response.text();
+      } else {
+        throw new Error('Network response was not ok');
+      }
+    })
+    .then(data => {
+      console.log(data);
+      if (data === 'success') {
+        alert('Email sent');
+        fullName.value = '';
+        email.value = '';
+        subject.value = '';
+        message.value = '';
+      } else {
+        alert('Something went wrong!');
+      }
+    })
+    .catch(error => {
+      console.error('There was an error sending the request:', error);
+    });
+});  
